@@ -1,0 +1,24 @@
+@media (max-width: 500px) {
+    .content{
+        padding-top: 3vh !important
+    }
+}
+@media (min-width: 500px) and (max-width: 800px) {
+    .content{
+        padding-top: 6vh !important
+    }
+}
+@media (min-width: 800px) {
+    .content{
+        padding-top: 13vh !important
+    }
+}
+
+ion-avatar{
+    margin: auto !important;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: 50px;
+    z-index: 9999;
+}

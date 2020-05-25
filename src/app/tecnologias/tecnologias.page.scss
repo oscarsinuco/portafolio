@@ -1,0 +1,87 @@
+.presentacion {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-avatar {
+    width: 20vw;
+    height: 20vw;
+}
+
+p {
+    color: var(--ion-color-light);
+    ;
+}
+
+.descripcion{
+    margin: auto;
+}
+
+
+.imgtec{
+    width: inherit !important;
+    height: 140px !important;
+}
+
+
+@media (max-width: 500px) {
+    .foto{
+        width: 70%;
+        margin: auto;
+    }
+    .foto ion-avatar{
+        width: 150px;
+        height: 150px;
+    }
+    .descripcion {
+        width: 100%;
+    }
+    .buttons{
+        width: 100%;
+    }
+    ion-chip{
+        width: 100%;
+    }
+    .slides2{
+        width: 100% !important;
+    }
+}
+@media (min-width: 500px) and (max-width: 800px) {
+    .foto{
+        width: 50%;
+        margin: auto;
+    }
+    .descripcion {
+        width: 70%;
+    }
+    .buttons{
+        width: 80%;
+    }
+    .slides2{
+        width: 80% !important;
+    }
+}
+@media (min-width: 800px) {
+    .foto{
+        width: 40%;
+        margin: auto;
+    }
+    ion-avatar{
+        width: 40% !important;
+        height: 40% !important;
+    }
+    .descripcion {
+        width: 70%;
+    }
+    .buttons{
+        width: 60%;
+    }
+    .slides2{
+        width: 55% !important;
+    }
+}
+.slides2{
+    margin: auto;
+}
