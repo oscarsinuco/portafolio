@@ -69,7 +69,6 @@ export class ContactoPage implements OnInit {
               'Content-Type': 'application/json'
             }
           }).then(res => { return res.json() }).then(data => {
-            console.log(data)
             this.loadingController.dismiss()
 
             let m1 = "Muy bien"
