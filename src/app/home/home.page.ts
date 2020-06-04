@@ -68,7 +68,6 @@ export class HomePage implements OnInit {
           element['owner'] = {
             login: element.namespace.path
           };
-          console.log(element);
           this.zone.run(() => {
 
             this.proyectos.push(element);
@@ -81,7 +80,6 @@ export class HomePage implements OnInit {
           element['owner'] = {
             login: element.namespace.path
           };
-          console.log(element);
           this.zone.run(() => {
 
             this.proyectos.push(element);

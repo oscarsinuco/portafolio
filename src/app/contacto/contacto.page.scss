@@ -10,7 +10,7 @@
 }
 @media (min-width: 800px) {
     .content{
-        padding-top: 13vh !important
+        padding-top: 2vh !important
     }
 }
 
@@ -21,4 +21,15 @@ ion-avatar{
     position: relative;
     top: 50px;
     z-index: 9999;
+}
+
+ion-input, ion-textarea{
+    font-size: 0.8rem;
+    color: gray;
+}
+ion-input ion-icon{
+    font-size: 1rem !important;
+}
+small{
+    font-size: 0.6rem;
 }

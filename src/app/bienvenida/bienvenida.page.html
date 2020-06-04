@@ -47,26 +47,32 @@
                 <div class="buttons">
                   <ion-grid>
                     <ion-row>
-                      <ion-col size-lg="3" size-sm="12">
+                      <ion-col size-lg="4" size-sm="12">
 
                         <ion-button [routerLink]="['/home']" expand="block" routerLinkActive="router-link-active"  color="light" class="ion-activatable ripple-parent" fill="outline">Proyectos
                           <ion-ripple-effect type="unbounded"></ion-ripple-effect>
                         </ion-button>
                       </ion-col>
-                      <ion-col size-lg="3" size-sm="12">
+                      <ion-col size-lg="4" size-sm="12">
                         <ion-button  href="https://www.linkedin.com/in/oscar-esneyder-sinuco-tirado-023708180/"  target="_blank"  color="light" expand="block" class="ion-activatable ripple-parent" fill="outline">Hoja de vida
                           <ion-ripple-effect type="unbounded"></ion-ripple-effect>
                         </ion-button>
 
                       </ion-col>
-                      <ion-col size-lg="3" size-sm="12">
+                      <ion-col size-lg="4" size-sm="12">
                         <ion-button  href="{{datosMios['html_url']}}" target="_blank" color="light" expand="block" class="ion-activatable ripple-parent" fill="outline">GitHub
                           <ion-ripple-effect type="unbounded"></ion-ripple-effect>
                         </ion-button>
 
                       </ion-col>
-                      <ion-col size-lg="3" size-sm="12">
+                      <ion-col size-lg="3" offset-lg="3" size-sm="12">
                         <ion-button  href="https://gitlab.com/oscarsinuco" target="_blank"    color="light" expand="block" class="ion-activatable ripple-parent" fill="outline">GitLab
+                          <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+                        </ion-button>
+
+                      </ion-col>
+                      <ion-col size-lg="3" size-sm="12">
+                        <ion-button  [routerLink]="['/contacto']" routerLinkActive="router-link-active"   color="light" expand="block" class="ion-activatable ripple-parent" fill="outline">CONTACTO
                           <ion-ripple-effect type="unbounded"></ion-ripple-effect>
                         </ion-button>
 

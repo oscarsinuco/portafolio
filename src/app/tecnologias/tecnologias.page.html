@@ -1,6 +1,6 @@
 <ion-content mode="ios">
     <div class="presentacion">
-        <div class="ion-padding">
+        <div>
             <ion-grid>
                 <ion-row class="ion-justify-content-center">
                     <ion-col size="12">
@@ -18,15 +18,15 @@
                     </ion-col>
                     <ion-col size-lg="10" size-sm="12">
                         <div style="margin: auto;">
-                            <div  class="ion-padding">
+                            <div>
                                 <ion-segment (ionChange)="segmentChanged($event)" value="Frontend">
-                                    <ion-segment-button value="Frontend">
+                                    <ion-segment-button value="Frontend" class="menua">
                                         <ion-label color="light">Frontend</ion-label>
                                     </ion-segment-button>
-                                    <ion-segment-button value="Backend">
+                                    <ion-segment-button value="Backend" class="menua">
                                         <ion-label color="light">Backend</ion-label>
                                     </ion-segment-button>
-                                    <ion-segment-button value="Motores">
+                                    <ion-segment-button value="Motores" class="menua">
                                         <ion-label color="light">Motores de BD</ion-label>
                                     </ion-segment-button>
                                     <!-- <ion-segment-button value="Otros">
