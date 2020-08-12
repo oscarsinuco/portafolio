@@ -1,92 +1,92 @@
 <ion-content>
-  <div class="presentacion">
-    <div class="ion-padding">
-      <ion-grid>
-        <ion-row class="ion-justify-content-center">
-          <ion-col size="12">
-            <div class="foto">
-              <ion-avatar style="margin: auto;">
-                <img src="{{datosMios['avatar_url']}}" />
-              </ion-avatar>
-              <h1 class="text-center" style="color: white; font-weight: bold">{{datosMios['name'] || nombre}}</h1>
-            </div>
-          </ion-col>
-          <ion-col size="12">
-            <div style="width: 100%; margin: auto;">
-              <div class="descripcion">
+    <div class="presentacion">
+        <div class="ion-padding">
+            <ion-grid>
+                <ion-row class="ion-justify-content-center">
+                    <ion-col size="12">
+                        <div class="foto">
+                            <ion-avatar style="margin: auto;">
+                                <img src="https://pbs.twimg.com/profile_images/1059180980265738240/jV_3TtMx_400x400.jpg" />
+                            </ion-avatar>
+                            <h1 class="text-center" style="color: white; font-weight: bold">{{nombre}}</h1>
+                        </div>
+                    </ion-col>
+                    <ion-col size="12">
+                        <div style="width: 100%; margin: auto;">
+                            <div class="descripcion">
 
-                <p color="light" class="text-center">
-                  Ingeniero de Sistemas graduado de la Universidad Industrial de Santander, autodidacta, desarrollador FullStack, amante de los viajes, la comida y el fútbol. 
-                  <br><i>'Compartir el conocimiento es generar riqueza intelectual.'</i> - Richard Stallman
-                </p>
-              </div>
-              <br>
-              <div style="width: 100%; display: flex; justify-content: center;">
-                <div>
-                  <ion-chip color="light">
-                    <ion-icon name="bookmarks-outline"></ion-icon>
-                    <ion-label>Ingeniero de sistemas</ion-label>
-                  </ion-chip>
-                  <a href="https://www.uis.edu.co/" target="_blank">
+                                <p color="light" class="text-center">
+                                    Ingeniero de Sistemas graduado de la Universidad Industrial de Santander, autodidacta, desarrollador FullStack, amante de los viajes, la comida y el fútbol.
+                                    <br><i>'Compartir el conocimiento es generar riqueza intelectual.'</i> - Richard Stallman
+                                </p>
+                            </div>
+                            <br>
+                            <div style="width: 100%; display: flex; justify-content: center;">
+                                <div>
+                                    <ion-chip color="light">
+                                        <ion-icon name="bookmarks-outline"></ion-icon>
+                                        <ion-label>Ingeniero de sistemas</ion-label>
+                                    </ion-chip>
+                                    <a href="https://www.uis.edu.co/" target="_blank">
 
-                    <ion-chip color="light">
-                      <ion-icon src="../../assets/logo.svg" style="color: white;"></ion-icon>
-                      <ion-label>Universidad industrial de santander</ion-label>
-                    </ion-chip>
-                  </a>
-                  <a href="https://www.google.com.co/maps/place/Bucaramanga" target="_blank">
-                    <ion-chip color="light">
-                      <ion-icon name="navigate-outline"></ion-icon>
-                      <ion-label>Bucaramanga</ion-label>
-                    </ion-chip>
-                  </a>
-                </div>
-              </div>
-              <br>
-              <div style="width: 100%; display: flex; justify-content: center;">
-                <div class="buttons">
-                  <ion-grid>
-                    <ion-row>
-                      <ion-col size-lg="4" size-sm="12">
+                                        <ion-chip color="light">
+                                            <ion-icon name="school-outline"></ion-icon>
+                                            <ion-label>Universidad industrial de santander</ion-label>
+                                        </ion-chip>
+                                    </a>
+                                    <a href="https://www.google.com.co/maps/place/Bucaramanga" target="_blank">
+                                        <ion-chip color="light">
+                                            <ion-icon name="navigate-outline"></ion-icon>
+                                            <ion-label>Bucaramanga</ion-label>
+                                        </ion-chip>
+                                    </a>
+                                </div>
+                            </div>
+                            <br>
+                            <div style="width: 100%; display: flex; justify-content: center;">
+                                <div class="buttons">
+                                    <ion-grid>
+                                        <ion-row>
+                                            <ion-col size-lg="4" size-sm="12">
 
-                        <ion-button [routerLink]="['/home']" expand="block" routerLinkActive="router-link-active"  color="light" class="ion-activatable ripple-parent" fill="outline">Proyectos
-                          <ion-ripple-effect type="unbounded"></ion-ripple-effect>
-                        </ion-button>
-                      </ion-col>
-                      <ion-col size-lg="4" size-sm="12">
-                        <ion-button  href="https://www.linkedin.com/in/oscar-esneyder-sinuco-tirado-023708180/"  target="_blank"  color="light" expand="block" class="ion-activatable ripple-parent" fill="outline">Hoja de vida
-                          <ion-ripple-effect type="unbounded"></ion-ripple-effect>
-                        </ion-button>
+                                                <ion-button [routerLink]="['/home']" expand="block" routerLinkActive="router-link-active" color="light" class="ion-activatable ripple-parent" fill="outline">Proyectos
+                                                    <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+                                                </ion-button>
+                                            </ion-col>
+                                            <ion-col size-lg="4" size-sm="12">
+                                                <ion-button href="https://www.linkedin.com/in/oscar-esneyder-sinuco-tirado-023708180/" target="_blank" color="light" expand="block" class="ion-activatable ripple-parent" fill="outline">Hoja de vida
+                                                    <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+                                                </ion-button>
 
-                      </ion-col>
-                      <ion-col size-lg="4" size-sm="12">
-                        <ion-button  href="{{datosMios['html_url']}}" target="_blank" color="light" expand="block" class="ion-activatable ripple-parent" fill="outline">GitHub
-                          <ion-ripple-effect type="unbounded"></ion-ripple-effect>
-                        </ion-button>
+                                            </ion-col>
+                                            <ion-col size-lg="4" size-sm="12">
+                                                <ion-button href="{{datosMios['html_url']}}" target="_blank" color="light" expand="block" class="ion-activatable ripple-parent" fill="outline">GitHub
+                                                    <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+                                                </ion-button>
 
-                      </ion-col>
-                      <ion-col size-lg="3" offset-lg="3" size-sm="12">
-                        <ion-button  href="https://gitlab.com/oscarsinuco" target="_blank"    color="light" expand="block" class="ion-activatable ripple-parent" fill="outline">GitLab
-                          <ion-ripple-effect type="unbounded"></ion-ripple-effect>
-                        </ion-button>
+                                            </ion-col>
+                                            <ion-col size-lg="3" offset-lg="3" size-sm="12">
+                                                <ion-button href="https://gitlab.com/oscarsinuco" target="_blank" color="light" expand="block" class="ion-activatable ripple-parent" fill="outline">GitLab
+                                                    <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+                                                </ion-button>
 
-                      </ion-col>
-                      <ion-col size-lg="3" size-sm="12">
-                        <ion-button  [routerLink]="['/contacto']" routerLinkActive="router-link-active"   color="light" expand="block" class="ion-activatable ripple-parent" fill="outline">CONTACTO
-                          <ion-ripple-effect type="unbounded"></ion-ripple-effect>
-                        </ion-button>
+                                            </ion-col>
+                                            <ion-col size-lg="3" size-sm="12">
+                                                <ion-button [routerLink]="['/contacto']" routerLinkActive="router-link-active" color="light" expand="block" class="ion-activatable ripple-parent" fill="outline">CONTACTO
+                                                    <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+                                                </ion-button>
 
-                      </ion-col>
-                    </ion-row>
-                  </ion-grid>
+                                            </ion-col>
+                                        </ion-row>
+                                    </ion-grid>
 
-                </div>
-              </div>
-            </div>
-          </ion-col>
+                                </div>
+                            </div>
+                        </div>
+                    </ion-col>
 
-        </ion-row>
-      </ion-grid>
+                </ion-row>
+            </ion-grid>
+        </div>
     </div>
-  </div>
 </ion-content>

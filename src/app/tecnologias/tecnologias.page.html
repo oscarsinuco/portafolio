@@ -7,7 +7,7 @@
                         <div class="foto">
                             <br><br>
                             <ion-avatar style="margin: auto;">
-                                <img src="{{datosMios['avatar_url']}}" />
+                                <img src="https://pbs.twimg.com/profile_images/1059180980265738240/jV_3TtMx_400x400.jpg" />
                             </ion-avatar><br>
                             <h1 class="text-center" style="color: white; font-weight: bold">
                                 Tecnologías que manejo</h1>
@@ -26,7 +26,7 @@
                                     <ion-segment-button value="Backend" class="menua">
                                         <ion-label color="light">Backend</ion-label>
                                     </ion-segment-button>
-                                    <ion-segment-button value="Motores" class="menua">
+                                    <ion-segment-button value="Motor de BD" class="menua">
                                         <ion-label color="light">Motores de BD</ion-label>
                                     </ion-segment-button>
                                     <!-- <ion-segment-button value="Otros">
@@ -40,24 +40,29 @@
             </ion-grid>
         </div>
     </div>
-    <div class="slides2">
+    <ion-grid>
+        <ion-row class="ion-justify-content-center">
+            <ion-col size="12" size-sm="8" size-xl="5" size-lg="6">
+                <ion-slides mode="ios" [options]="slideOpts">
+                    <ion-slide *ngFor="let item of getFiltrados(tec, tipo)">
+                        <ion-card>
+                            <img src="{{item.imagen}}" class="swiper-lazy imgtec" />
+                            <ion-card-header>
+                                <ion-card-subtitle>{{item.nombre}}</ion-card-subtitle>
+                                <ion-card-title>{{item.tipo | uppercase | slice:0:11}}
+                                </ion-card-title>
+                            </ion-card-header>
+                            <ion-card-content>
+                                {{item.descripcion | slice:0:45}}...
+                            </ion-card-content>
+                        </ion-card>
+                    </ion-slide>
+                </ion-slides>
 
-        <ion-slides mode="ios" [options]="slideOpts">
-            <ion-slide *ngFor="let item of tec">
-                <ion-card>
-                    <img src="{{item.imagen}}" class="swiper-lazy imgtec" />
-                    <ion-card-header>
-                        <ion-card-subtitle>{{item.subtitulo}}</ion-card-subtitle>
-                        <ion-card-title>{{item.titulo | uppercase | slice:0:10}}
-                        </ion-card-title>
-                    </ion-card-header>
-                    <ion-card-content>
-                        {{item.descripcion}}
-                    </ion-card-content>
-                </ion-card>
-            </ion-slide>
-        </ion-slides>
-    </div>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
     <div>
         <div>
             <ion-grid>
@@ -68,12 +73,10 @@
                             <div style="width: 100%; display: flex; justify-content: center;">
                                 <div class="buttons">
                                     <ion-grid>
-                                        <ion-row>
-                                            <ion-col size-lg="4" offset-lg="4" size-sm="12">
+                                        <ion-row class="ion-justify-content-center">
+                                            <ion-col size-xl="7" size-lg="4" size-sm="12">
 
-                                                <ion-button [routerLink]="['/home']" expand="block"
-                                                    routerLinkActive="router-link-active" color="light"
-                                                    class="ion-activatable ripple-parent" fill="outline">
+                                                <ion-button [routerLink]="['/home']" expand="block" routerLinkActive="router-link-active" color="light" class="ion-activatable ripple-parent" fill="outline">
                                                     <ion-icon slot="start" name="arrow-back"></ion-icon>
                                                     Volver
                                                     <ion-ripple-effect type="unbounded"></ion-ripple-effect>

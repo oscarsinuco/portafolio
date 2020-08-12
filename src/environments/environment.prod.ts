@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  url: 'https://api.github.com/users/oscarsinuco',
+  url: 'https://adminsinuco.herokuapp.com',
   urlCorreo: 'https://correos-sinuco.herokuapp.com/correoPortafolio'
 };

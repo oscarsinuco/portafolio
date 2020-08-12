@@ -12,6 +12,24 @@
 
 .imgcurso {
     width: 100%;
-    min-height: 160px;
+    height: 200px;
 }
 
+.description {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.menua ion-label:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}

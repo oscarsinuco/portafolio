@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-
+import { BienvenidaPageModule } from "./bienvenida/bienvenida.module";
+import { TecnologiasPageModule } from './tecnologias/tecnologias.module';
+import { HomePageModule } from './home/home.module';
+import { ContactoPageModule } from './contacto/contacto.module';
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule),
+    loadChildren: () => {return HomePageModule},
     data: {
       state: 'home'
     }
@@ -16,27 +19,27 @@ const routes: Routes = [
   },
   {
     path: 'bienvenida',
-    loadChildren: () => import('./bienvenida/bienvenida.module').then( m => m.BienvenidaPageModule),
+    loadChildren: () => {return BienvenidaPageModule},
     data: {
       state: 'bienvenida'
     }
   },
   {
     path: 'tecnologias',
-    loadChildren: () => import('./tecnologias/tecnologias.module').then( m => m.TecnologiasPageModule),
+    loadChildren: () => {return TecnologiasPageModule},
     data: {
       state: 'tecnologias'
     }
   },
   {
     path: 'contacto',
-    loadChildren: () => import('./contacto/contacto.module').then( m => m.ContactoPageModule)
+    loadChildren: () => {return ContactoPageModule}
   },
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(routes)
   ],
   exports: [RouterModule]
 })

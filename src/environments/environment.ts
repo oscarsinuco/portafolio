@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  url: 'https://api.github.com/users/oscarsinuco',
+  url: 'https://adminsinuco.herokuapp.com',
   urlCorreo: 'https://correos-sinuco.herokuapp.com/correoPortafolio'
 };
 

@@ -31,62 +31,39 @@ export class HomePage implements OnInit {
     spaceBetween: 10,
     freemode: true,
     breakpoints: {
-      // when window width is >= 320px
       320: {
         slidesPerView: 1,
         spaceBetween: 20
       },
-      // when window width is >= 480px
       480: {
         slidesPerView: 2,
         spaceBetween: 30
       },
-      // when window width is >= 640px
+      576: {
+        slidesPerView: 1,
+        spaceBetween: 30
+      },
+      774: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
       950: {
         slidesPerView: 2,
         spaceBetween: 40
-      }
+      },
+      1200: {
+        slidesPerView: 2,
+        spaceBetween: 10
+      },
     }
   }
   constructor(private zone: NgZone) {
-    fetch(`${environment.url}/repos`).then(res => { return res.json() }).then(data => {
-      //this.proyectos = []
-      this.proyectos = data;
-      this.proyectos.unshift({
-        name: 'Calumet Estándar',
-        owner: {
-          login: 'UIS'
-        },
-        language: 'JAVA + JSP',
-        html_url: 'http://cormoran.uis.edu.co/eisi/'
-      });
-      fetch('https://gitlab.com/api/v4/users/oscarsinuco/projects').then(res => { return res.json() }).then(data2 => {
-        data2.forEach(element => {
-
-          element['html_url'] = element['web_url'];
-          element['language'] = 'Any';
-          element['owner'] = {
-            login: element.namespace.path
-          };
-          this.zone.run(() => {
-
-            this.proyectos.push(element);
-          })
-        });
-        fetch('https://gitlab.com/api/v4/users/Diego.98/projects').then(res => { return res.json() }).then(data=>{
-          let element = data[0];
-          element['html_url'] = element['web_url'];
-          element['language'] = 'Any';
-          element['owner'] = {
-            login: element.namespace.path
-          };
-          this.zone.run(() => {
-
-            this.proyectos.push(element);
-          })
-        })  
+    fetch(`${environment.url}/proyectos`).then(res => res.json()).then(proyectos => {
+      this.zone.run(() => {
+        this.proyectos = proyectos.proyectos
       })
     })
+
   }
 
 
